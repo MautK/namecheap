@@ -1,0 +1,24 @@
+.top {
+    font-family: 'Quicksand', sans-serif;
+ list-style-type: none;
+    display: block;
+     background-color: white;
+    overflow: hidden;
+     text-transform: uppercase;
+    margin: 15px 15px;
+}
+
+.top_button {
+   float: right;
+    background-color: white;
+display: block;
+    text-align: center;
+    text-decoration: none;
+    color: coral;
+    margin: 15px 15px;
+}
+
+.top_button:hover {
+    text-decoration: line-through;
+}
+

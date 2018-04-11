@@ -1,0 +1,193 @@
+#content {
+    position: absolute;
+    left: 0px;
+    top: 6%;
+    width: 100%;
+    height: 1200px;
+    overflow: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+/* text gerelateerde dingen */
+
+h6 {
+    left: 5%;
+    color: coral;
+     font-family: 'Quicksand', sans-serif;
+    -webkit-column-span: 1;
+    column-span: 1;
+        font-weight: normal;
+}
+
+#titels_mainpage {
+    color: darkgrey;
+     font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    font-size: 14px; 
+    margin-left: 35px;
+    margin-top: 0px;
+}
+
+#titels_mainpage:hover {
+     text-decoration: line-through;
+}
+
+#titels{
+    color: darkgrey;
+     font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    font-size: 14px;    
+}
+
+#titels:hover {
+     text-decoration: line-through;
+}
+
+a {
+    float: none;
+    top: 10%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: darkgray;
+}
+
+#social_media {
+    float: none;
+    text-transform: none;
+}
+
+#social_media:hover {
+    text-decoration: line-through; 
+}
+
+p {
+    width: 50%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    color: darkgrey;
+}
+
+
+
+
+/*plaatjes op beginpagina */
+
+.project_preview {
+    position: static;
+    margin-left: 35px;
+    margin-right: 35px;
+    height: auto;
+    display:flex;
+    flex-wrap: wrap;
+    /* flex configuration for Safari*/
+  display:-webkit-flex;
+  -webkit-flex-wrap:wrap;
+  /* flex-box content alignment*/
+  justify-content:center;
+  /* depth order */
+  z-index: 1;
+}
+
+
+.project_preview_image {
+    height: 150px;
+    width: 20%;
+    overflow: hidden;
+}
+
+.project_preview_image_25 {
+    height: 150px;
+    width: 25%;
+    overflow: hidden;
+}
+.project_preview_image_25_small {
+    height: 50px;
+    width: 25%;
+    overflow: hidden;
+}
+
+.project_preview_image_33 {
+    height: 150px;
+    width: 33%;
+    overflow: hidden;
+}
+
+.project_preview_image_50 {
+    height: 150px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.project_preview_image_75 {
+    height: 150px;
+    width: 75%;
+    overflow: hidden;
+}
+
+.project_preview_image_100 {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project_preview_image_100_small {
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project_preview_image img{
+ height: 100%;
+}
+
+/*making the image grey scale and bring back the colour on hovering*/
+
+
+#project_met_titel {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+#project_met_titel:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+
+/*voor de project pagina's*/
+#text_box {
+    margin: 35px;
+    float: left;
+    max-width: 30%;
+    width: 30%;
+    overflow: hidden;
+}
+
+#picture_box {
+    margin-right: 5px;
+    margin-left: 35%;
+    width: 60%;
+     height: 50%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+#image_links {
+    text-transform: capitalize;
+    font-size: 10px;
+    color: darkgray;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 200px;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: line-through;
+}
+
+
+ 
