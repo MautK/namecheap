@@ -13,7 +13,19 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        
+               
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+       
+       <script>
+$(document).ready(function(){
+    $('.first').show();
+    $(".showSingle").click(function(){
+       $('.targetDiv').hide();
+        $('.first').hide();
+        $('#div'+$(this).attr('target')).show();
+    });
+});
+</script>    
    
 </head>
    
@@ -43,17 +55,18 @@ Launched as an app running on the webbrowser, I am now updating it into a iOS/An
             <h6>Documentation</h6>
             
                 <div id="image_links">
-            <a href="../html/friend_code/friend_code_app.html">
+                    
+            <a class="showSingle" target="1">
            The App </a><br>
-        <a href="../html/friend_code/friend_code_diagram.html">
+        <a class="showSingle" target="2">
            Diagram </a><br>
-          <a href="../html/friend_code/friend_code_mom.html">
+          <a class="showSingle" target="3">
            Mom </a><br>
-         <a href="../html/friend_code/friend_code_sammlungfreunden.html">
+         <a class="showSingle" target="4">
            Friends </a><br>
-        <a href="../html/friend_code/friend_code_walkhome.html">
+        <a class="showSingle" target="5">
            Colour Change Walk </a><br>
-        <a href="https://www.uni-weimar.de/~qoko8172/" target="_blank">
+       <a href="https://www.uni-weimar.de/~qoko8172/" target="_blank">
            Weblink </a><br>
 
             
@@ -66,8 +79,15 @@ Launched as an app running on the webbrowser, I am now updating it into a iOS/An
             <h6> </h6></div>
         <div class="picture_box_picture">
           
-        <img src="../img/friends/begin_kleur_projektpage.jpg">
+        <div class="first"><img src="../img/friends/begin_kleur_projektpage.jpg"></div>
+        <div id="div1" class="targetDiv"><img src="../img/friends/mobile_app.jpg"></div>
+        <div id="div2" class="targetDiv"><img src="../img/friends/diagram.jpg"></div>
+        <div id="div3" class="targetDiv"><img src="../img/friends/mom_projektpage.jpg"></div>
+        <div id="div4" class="targetDiv"><img src="../img/friends/freunden_projetpage.jpg"></div>
+        <div id="div5" class="targetDiv"><img src="../img/friends/walk_weimar.jpg"></div>
+        
+            </div>
             
-            </div></div></div>
+            </div></div>
         
        </body>

@@ -14,7 +14,19 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        
+       
+                   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+       
+       <script>
+$(document).ready(function(){
+    $('.first').show();
+    $(".showSingle").click(function(){
+       $('.targetDiv').hide();
+        $('.first').hide();
+        $('#div'+$(this).attr('target')).show();
+    });
+});
+</script>
    
 </head>
    
@@ -46,18 +58,18 @@ Interesting about this project was the new possibility for contact in between sp
             
                 <div id="image_links">
             
-          <a href="../html/biogames/sketch1.html">
-           Tracing 1 </a><br>
-         <a href="../html/biogames/sketch2.html">
-           Tracing 2 </a><br>
-        <a href="../html/biogames/sketch3.html">
-           Tracing 3 </a><br>
-        <a href="../html/biogames/sketch4.html">
-           Tracing 4 </a><br>
-                    <a href="../html/biogames/festival_setup1.html">
-           Festival setup 1 </a><br>
-                    <a href="../html/biogames/festival_setup2.html">
-           Festival setup 2 </a><br>
+ <a class="showSingle" target="1">
+     Tracing 1 </a><br>
+ <a class="showSingle" target="2">
+     Tracing 2 </a><br>
+ <a class="showSingle" target="3">
+     Tracing 3 </a><br>
+ <a class="showSingle" target="4">
+     Tracing 4 </a><br>
+ <a class="showSingle" target="5">
+     Festival setup 1 </a><br>
+ <a class="showSingle" target="6">
+     Festival setup 2 </a><br>
 
             
         </div>
@@ -69,8 +81,13 @@ Interesting about this project was the new possibility for contact in between sp
             <h6> </h6></div>
         <div class="picture_box_picture">
           
-        <img src="../img/lebendige_spiele/project_experiment_beginpagina.jpg">
-            
+<div class="first"><img src="../img/lebendige_spiele/project_experiment_beginpagina.jpg"></div>
+        <div id="div1" class="targetDiv"><img src="../img/lebendige_spiele/project_experiment1.jpg"></div>
+        <div id="div2" class="targetDiv"><img src="../img/lebendige_spiele/project_experiment2.jpg"></div>
+        <div id="div3" class="targetDiv"><img src="../img/lebendige_spiele/project_experiment3.jpg"></div>
+        <div id="div4" class="targetDiv"><img src="../img/lebendige_spiele/project_experiment4.jpg"></div>
+        <div id="div5" class="targetDiv"><img src="../img/lebendige_spiele/setup.jpg"></div>
+            <div id="div6" class="targetDiv"><img src="../img/lebendige_spiele/setup2.jpg"></div>            
             </div></div></div>
         
        </body>

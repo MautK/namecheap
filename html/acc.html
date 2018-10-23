@@ -15,6 +15,18 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         
+                           <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+       
+       <script>
+$(document).ready(function(){
+    $('.first').show();
+    $(".showSingle").click(function(){
+       $('.targetDiv').hide();
+        $('.first').hide();
+        $('#div'+$(this).attr('target')).show();
+    });
+});
+</script>
    
 </head>
    
@@ -47,18 +59,18 @@ With 40.000 ballfit balls in the gallery space we recorded the movement of the v
             
   <div id="image_links">
             
-          <a href="../html/acc/sorting_test.html">
-           Sorting Test </a><br>
-         <a href="../html/acc/sorting_captures.html">
-           Sorting Test </a><br>
-       <a href="../html/acc/sorting_test_video.html">
-           Sorting Test </a><br>
-       <a href="../html/acc/gallery_before.html">
-           Gallery at the Start </a><br>
-                      <a href="../html/acc/sorting_before_camera.html">
-           Gallery at the Start </a><br>
-       <a href="../html/acc/gallery_captures.html">
-           Gallery Captures </a><br>
+ <a class="showSingle" target="1">
+     Sorting Test </a><br>
+ <a class="showSingle" target="2">
+     Sorting Test </a><br>
+ <a class="showSingle" target="3">
+     Sorting Test </a><br>
+ <a class="showSingle" target="4">
+     Gallery at the Start </a><br>
+ <a class="showSingle" target="5">
+     Gallery at the Start </a><br>
+ <a class="showSingle" target="6">
+     Gallery Captures </a><br>
         
 
             
@@ -71,8 +83,13 @@ With 40.000 ballfit balls in the gallery space we recorded the movement of the v
             <h6> </h6></div>
         <div class="picture_box_picture">
           
-        <img src="../img/acc/beginpagine_ballz.jpg">
-            
+<div class="first"><img src="../img/acc/beginpagine_ballz.jpg"></div>
+        <div id="div1" class="targetDiv"><img src="../img/acc/IMG_0400_website.JPG"></div>
+        <div id="div2" class="targetDiv"><img src="../img/acc/sorting_captures_test.jpg"></div>
+        <div id="div3" class="targetDiv"><iframe src="https://player.vimeo.com/video/264485324" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div id="div4" class="targetDiv"><img src="../img/acc/gallery_start_camera.jpg"></div>
+        <div id="div5" class="targetDiv"><img src="../img/acc/acc_beginsituatie.jpg"></div>
+            <div id="div6" class="targetDiv"><img src="../img/acc/gallery_captures_webcam.jpg"></div>             
             </div></div></div>
         
        </body>

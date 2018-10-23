@@ -14,7 +14,19 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         
-   
+           <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+       
+       <script>
+$(document).ready(function(){
+    $('.first').show();
+    $(".showSingle").click(function(){
+       $('.targetDiv').hide();
+        $('.first').hide();
+        $('#div'+$(this).attr('target')).show();
+    });
+});
+</script>
+        
 </head>
    
    <body>
@@ -45,21 +57,21 @@
             
                 <div id="image_links">
             
-             <a href="../html/deleted_environments/expo_book.html">
+             <a class="showSingle" target="1">
            Marked Dictionary </a><br>
-                    <a href="../html/deleted_environments/expo_book2.html">
+                    <a class="showSingle" target="2">
            Marked Dictionary 2 </a><br>
-                    <a href="../html/deleted_environments/kiosk.html">
+                    <a class="showSingle" target="3">
            Kiosk </a><br>
-        <a href="../html/deleted_environments/hauptgebaude.html">
+        <a class="showSingle" target="4">
            Bauhaus Main Building </a><br>
-        <a href="../html/deleted_environments/schoolgebouw.html">
+        <a class="showSingle" target="5">
            School Building </a><br>
-        <a href="../html/deleted_environments/work_in_progress.html">
+        <a class="showSingle" target="6">
            Work in Progress </a><br>
-        <a href="../html/deleted_environments/deleting_environments.html">
+        <a class="showSingle" target="7">
           Deleting Environments </a><br>
-                     <a href="../html/deleted_environments/mouse_arm.html">
+                     <a class="showSingle" target="8">
           Process </a>
 
             
@@ -71,7 +83,18 @@
             <div class="picture_box_title">
             <h6> </h6></div>
         <div class="picture_box_picture">
-            <img src="../img/deleted_environments/project_page/deleted_evironments_startimage.jpg"></div>
+            
+            <div class="first"><img src="../img/deleted_environments/project_page/deleted_evironments_startimage.jpg"></div>
+        <div id="div1" class="targetDiv"><img src="../img/deleted_environments/project_page/book.jpg"></div>
+        <div id="div2" class="targetDiv"><img src="../img/deleted_environments/project_page/expo1.jpg"></div>
+        <div id="div3" class="targetDiv"><img src="../img/deleted_environments/project_page/kiosk_projectpage.jpg"></div>
+        <div id="div4" class="targetDiv"><img src="../img/deleted_environments/project_page/mainbuilding_projectpage.jpg"></div>
+        <div id="div5" class="targetDiv"><img src="../img/deleted_environments/project_page/school_brucknerstrasse_projectpage.jpg"></div>
+            <div id="div6" class="targetDiv"><img src="../img/deleted_environments/project_page/bomen_uitknippen.jpg"></div>
+            <div id="div7" class="targetDiv">   <iframe src="https://player.vimeo.com/video/263312984" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            <div id="div8" class="targetDiv">   <iframe src="https://player.vimeo.com/video/260901755" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            
+            </div>
         </div>
         
        </div></body>

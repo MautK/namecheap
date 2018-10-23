@@ -15,7 +15,19 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         
-   
+             <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+       
+       <script>
+$(document).ready(function(){
+    $('.first').show();
+    $(".showSingle").click(function(){
+       $('.targetDiv').hide();
+        $('.first').hide();
+        $('#div'+$(this).attr('target')).show();
+    });
+});
+</script>
+        
 </head>
    
    <body>
@@ -46,15 +58,15 @@ In progress - currently working on giving the right feedback for if you end up i
             
                 <div id="image_links">
             
-          <a href="../html/antipodes/spin_layout.html">
+             <a class="showSingle" target="1">
            Lay-out </a><br>
-         <a href="../html/antipodes/spin_googleStreetview.html">
+             <a class="showSingle" target="2">
            Spin Screenshot</a><br>
-                    <a href="../html/antipodes/spin1.html">
+             <a class="showSingle" target="3">
            Spin 1 </a><br>
-         <a href="../html/antipodes/spin2.html">
+             <a class="showSingle" target="4">
            Spin 2 </a><br>
-        <a href="../html/antipodes/spin3.html">
+             <a class="showSingle" target="5">
            Spin 3 </a><br>
         
          
@@ -69,8 +81,12 @@ In progress - currently working on giving the right feedback for if you end up i
             <h6> </h6></div>
         <div class="picture_box_picture">
           
-        <img src="../img/antipode/beginpagine_ocean.jpg">
-            
+ <div class="first"><img src="../img/antipode/beginpagine_ocean.jpg"></div>
+        <div id="div1" class="targetDiv"><img src="../img/antipode/startpagina.jpg"></div>
+        <div id="div2" class="targetDiv"><img src="../img/antipode/partofthestreetview.jpg"></div>
+        <div id="div3" class="targetDiv"><img src="../img/antipode/spin1.jpg"></div>
+        <div id="div4" class="targetDiv"><img src="../img/antipode/spin2.jpg"></div>
+        <div id="div5" class="targetDiv"><img src="../img/antipode/spin3.jpg"></div>            
             </div></div></div>
         
        </body>
