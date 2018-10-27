@@ -15,6 +15,19 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         
    
+             <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+       
+       <script>
+$(document).ready(function(){
+    $('.first').show();
+    $(".showSingle").click(function(){
+       $('.targetDiv').hide();
+        $('.first').hide();
+        $('#div'+$(this).attr('target')).show();
+    });
+});
+</script>
+        
 </head>
    
    <body>
@@ -42,21 +55,21 @@ A selection of environment-sketches I made throughout the years throughout my tr
             
                    <div id="image_links">
             
-         <a href="../../html/sketches/Cospunder_see.html">
+ <a class="showSingle" target="1">
            Cospunder See - Germany </a><br>
-         <a href="../../html/sketches/curacoa.html">
+ <a class="showSingle" target="2">
            Willemstad - Curacao </a><br>
-        <a href="../../html/sketches/Fillipines.html">
+ <a class="showSingle" target="3">
            Cebu - Philippines </a><br>
-       <a href="../../html/sketches/Freetown.html">
+ <a class="showSingle" target="4">
            Freetown - Sierra Leone </a><br>
-       <a href="../../html/sketches/LAke_Tahoe.html">
+ <a class="showSingle" target="5">
            Lake Tahoe - USA </a><br>
-                    <a href="../../html/sketches/Latvia.html">
+ <a class="showSingle" target="6">
            Ventspils - Latvia </a><br>
-                    <a href="../../html/sketches/limburg.html">
+ <a class="showSingle" target="7">
            Sint Geertruid - the Netherlands </a><br>
-                    <a href="../../html/sketches/Eefe.html">
+ <a class="showSingle" target="8">
            Eefe - Netherlands </a><br>
                 
             
@@ -69,7 +82,16 @@ A selection of environment-sketches I made throughout the years throughout my tr
             <h6> </h6></div>
         <div class="picture_box_picture">
           
-         <img src="../../img/schetsen_omgeving/beginscherm.jpg">
+            
+             <div class="first"><img src="../../img/schetsen_omgeving/beginscherm.jpg"></div>
+        <div id="div1" class="targetDiv"><img src="../../img/schetsen_omgeving/cospunder.jpg"></div>
+        <div id="div2" class="targetDiv"><img src="../../img/schetsen_omgeving/curacao.jpg"></div>
+        <div id="div3" class="targetDiv"><img src="../../img/schetsen_omgeving/philippines.jpg"></div>
+        <div id="div4" class="targetDiv"><img src="../../img/schetsen_omgeving/freetown.jpg"></div>
+        <div id="div5" class="targetDiv"><img src="../../img/schetsen_omgeving/tahoe.jpg"></div>
+            <div id="div6" class="targetDiv"><img src="../../img/schetsen_omgeving/ventspils.jpg"></div>
+            <div id="div7" class="targetDiv"><img src="../../img/schetsen_omgeving/waterloop.jpg"></div>
+            <div id="div8" class="targetDiv"><img src="../../img/schetsen_omgeving/eefe_MaudCanisius.jpg"></div>
             
             </div></div></div>
         

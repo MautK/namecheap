@@ -14,6 +14,19 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+     
+          <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+       
+       <script>
+$(document).ready(function(){
+    $('.first').show();
+    $(".showSingle").click(function(){
+       $('.targetDiv').hide();
+        $('.first').hide();
+        $('#div'+$(this).attr('target')).show();
+    });
+});
+</script>
         
    
 </head>
@@ -46,17 +59,17 @@ Studying the behaviour of light and light bending techniques and transformations
             
                 <div id="image_links">
             
-          <a href="../html/ilm/transformation.html">
+ <a class="showSingle" target="1">
            Landscape Transformation </a><br>
-        <a href="../html/ilm/testing.html">
+ <a class="showSingle" target="2">
            Prototyping </a><br>
-        <a href="../html/ilm/different_forms.html">
+ <a class="showSingle" target="3">
            Possible forms </a><br>
-        <a href="../html/ilm/physical.html">
+ <a class="showSingle" target="4">
            Bending Principle </a><br>
-        <a href="../html/ilm/different_lens_types.html">
+ <a class="showSingle" target="5">
           Lens Options  </a><br>
-                       <a href="../html/ilm/model.html">
+ <a class="showSingle" target="6">
           Model </a><br>
 
             
@@ -69,8 +82,13 @@ Studying the behaviour of light and light bending techniques and transformations
             <h6> </h6></div>
         <div class="picture_box_picture">
           
-        <img src="../img/ilm/ilm_beginpagine.jpg">
-            
+<div class="first"><img src="../img/ilm/ilm_beginpagine.jpg"></div>
+        <div id="div1" class="targetDiv"><img src="../img/ilm/transformatie_opzet.jpg"></div>
+        <div id="div2" class="targetDiv"><img src="../img/ilm/prototype_testing.jpg"></div>    
+       <div id="div3" class="targetDiv"><img src="../img/ilm/lens_vormen.jpg"></div>
+        <div id="div4" class="targetDiv"><img src="../img/ilm/principe.jpg"></div>     
+        <div id="div5" class="targetDiv"><img src="../img/ilm/lens_types.jpg"></div>
+        <div id="div6" class="targetDiv"><img src="../img/ilm/model.jpg"></div>     
             </div></div></div>
         
        </body>

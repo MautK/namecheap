@@ -14,7 +14,19 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         
-   
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+       
+       <script>
+$(document).ready(function(){
+    $('.first').show();
+    $(".showSingle").click(function(){
+       $('.targetDiv').hide();
+        $('.first').hide();
+        $('#div'+$(this).attr('target')).show();
+    });
+});
+</script>
+        
 </head>
    
    <body>
@@ -43,21 +55,21 @@ Combining functional with aesthetics, in this design an unique energy landscape 
             
                 <div id="image_links">
             
-        <a href="../../html/popup_energy/harbour_overview.html">
+ <a class="showSingle" target="1">
            Overview Harbour </a><br>
-       <a href="../../html/popup_energy/energycrops.html">
+ <a class="showSingle" target="2">
            Energycrops </a><br>
-                          <a href="../../html/popup_energy/layer_design.html">
+ <a class="showSingle" target="3">
            Principles in the Design </a><br>
-                     <a href="../../html/popup_energy/human_proportions.html">
+ <a class="showSingle" target="4">
            Human proportions in the design </a><br>
-                          <a href="../../html/popup_energy/elements.html">
+ <a class="showSingle" target="5">
            Vantage Elements </a><br>
-                    <a href="../../html/popup_energy/plot_design.html">
+ <a class="showSingle" target="6">
            Design for plot of Land </a><br>     
-         <a href="../../html/popup_energy/seasons.html">
+ <a class="showSingle" target="7">
            Seasonal Changes </a><br>
-                    <a href="../../html/popup_energy/winst.html">
+ <a class="showSingle" target="8">
            Profit with each Harvest </a><br>
 
             
@@ -69,8 +81,16 @@ Combining functional with aesthetics, in this design an unique energy landscape 
             <div class="picture_box_title">
             <h6> </h6></div>
         <div class="picture_box_picture">
-          
-         <img src="../../img/renewable_energy/beginpagina.jpg">
+                      
+            <div class="first"><img src="../../img/renewable_energy/beginpagina.jpg"></div>
+        <div id="div1" class="targetDiv"><img src="../../img/renewable_energy/overview_harbour.jpg"></div>
+        <div id="div2" class="targetDiv"><img src="../../img/renewable_energy/Energiegewassen.jpg"></div>
+        <div id="div3" class="targetDiv"><img src="../../img/renewable_energy/principles.jpg"></div>
+        <div id="div4" class="targetDiv"><img src="../../img/renewable_energy/proportions.jpg"></div>
+        <div id="div5" class="targetDiv"><img src="../../img/renewable_energy/vantagepoints.jpg"></div>
+            <div id="div6" class="targetDiv"><img src="../../img/renewable_energy/final_design.jpg"></div>
+            <div id="div7" class="targetDiv"><img src="../../img/renewable_energy/gif.gif"></div>
+            <div id="div8" class="targetDiv"><img src="../../img/renewable_energy/winst.jpg"></div>
             
             </div></div></div>
         

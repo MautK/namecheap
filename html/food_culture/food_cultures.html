@@ -15,6 +15,19 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         
    
+             <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+       
+       <script>
+$(document).ready(function(){
+    $('.first').show();
+    $(".showSingle").click(function(){
+       $('.targetDiv').hide();
+        $('.first').hide();
+        $('#div'+$(this).attr('target')).show();
+    });
+});
+</script>
+        
 </head>
    
    <body>
@@ -42,14 +55,14 @@ Different small projects on the recurring theme of (sustainable) food consumptio
             
                 <div id="image_links">
             
-        <a href="../../html/food_culture/food_calender.html">
-           Food Calendar </a><br>
-       <a href="../../html/food_culture/garden.html">
-           Student Garden </a><br>
-                          <a href="../../html/food_culture/lingezegen.html">
-           Sustainable Food Forest </a><br>
-                     <a href="../../html/food_culture/future_food.html">
-           Future Food </a><br>
+<a class="showSingle" target="1">
+    Food Calendar </a><br>
+<a class="showSingle" target="2">
+    Student Garden </a><br>
+<a class="showSingle" target="3">
+    Sustainable Food Forest </a><br>
+<a class="showSingle" target="4">
+    Future Food </a><br>
       
 
             
@@ -62,8 +75,11 @@ Different small projects on the recurring theme of (sustainable) food consumptio
             <h6> </h6></div>
         <div class="picture_box_picture">
           
-         <img src="../../img/food/beginpagina.jpg">
-            
+<div class="first"><img src="../../img/food/beginpagina.jpg"></div>
+        <div id="div1" class="targetDiv"><img src="../../img/food/calendar.jpg"></div>
+        <div id="div2" class="targetDiv"><img src="../../img/food/tuin.jpg"></div>
+        <div id="div3" class="targetDiv"><img src="../../img/food/sustainable_foodforest.jpg"> </div>
+            <div id="div4" class="targetDiv"><img src="../../img/food/future_food.jpg"></div>            
             </div></div></div>
         
        </body>
