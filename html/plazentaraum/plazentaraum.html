@@ -1,0 +1,95 @@
+<html>
+    
+    <head>
+
+<title>Main Page</title>
+ <meta charset ="utf-8"/>
+ <!--include style sheets of the two different things-->
+ <link rel="stylesheet" type="text/css" href="../../css/banner.css">
+  <link rel="stylesheet" type="text/css" href="../../css/gallery.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!--different font-families-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+       
+       <script>
+$(document).ready(function(){
+    $('.first').show();
+    $(".showSingle").click(function(){
+       $('.targetDiv').hide();
+        $('.first').hide();
+        $('#div'+$(this).attr('target')).show();
+    });
+});
+</script>
+        
+</head>
+   
+   <body>
+ <div class ="top">
+
+<!--include the links to the different header tabs here-->
+    <a class="top_button" href="../../index.html" style="float: left"> Maud Canisius </a>
+  <a class="top_button" href="../../html/about.html">About</a>
+ <a class="top_button" href ="../../html/contact.html">Contact</a>
+      </div>
+
+              
+    <div id="content">
+       
+        <div id="text_box">
+            
+             
+             <h6>Plazentaraum</h6>
+    
+    <p>Reoccuring music sessions organized in collaboration with Lina Gräf at various settings. Uniting elements are the warm, comforting lights, plants, beautiful relaxing music, encouragement of creative outbursts, and intellectual exchanges. At the end of each session we have a tape with a recording of the music played. </p>
+
+            
+            <h6>Documentation</h6>
+            
+            <div id="image_links">
+            
+             <a class="showSingle" target="1">
+           Bauhaus100 Edition </a><br>
+             <a class="showSingle" target="2">
+           Bauhaus100 Edition </a><br>
+                <a class="showSingle" target="3">
+           Bauhaus100 Edition</a><br>
+            <a class="showSingle" target="4">
+           Bauhaus100 Edition</a><br>
+               <a class="showSingle" target="5">
+           Tapes </a><br>
+                 <a href="https://www.mixcloud.com/Maut_K/" target="_blank">
+           Mixcloud </a><br>
+    
+                   
+
+            
+        </div>
+
+        </div>
+       
+        <div id="picture_box">
+            <div class="picture_box_title">
+            <h6> </h6></div>
+        <div class="picture_box_picture">
+            
+        <div class="first"><img src="../../img/plazentaraum/Bauhaus100b_MaudCanisius.jpg"></div>
+        <div id="div1" class="targetDiv"><img src="../../img/plazentaraum/Bauhaus100_MaudCanisius.jpg"></div>
+        <div id="div2" class="targetDiv"><img src="../../img/plazentaraum/Bauhaus100b_MaudCanisius.jpg"></div>
+        <div id="div3" class="targetDiv"><img src="../../img/plazentaraum/Bauhaus100c_MaudCanisius.jpg"></div>
+        <div id="div4" class="targetDiv"><img src="../../img/plazentaraum/FennaSophia_MaudCanisius.jpg"></div>
+        <div id="div5" class="targetDiv"><img src="../../img/plazentaraum/Cassette_MaudCanisius.jpg"></div>
+            <div id="div6" class="targetDiv"><img src="../../img/plazentaraum/Cassette_MaudCanisius.jpg"></div>
+            <div id="div7" class="targetDiv"><img src="../../img/zero_meter/stills_MaudCanisius.jpg"></div>
+            
+            </div> 
+            
+            
+        </div></div>
+        
+       </body>
