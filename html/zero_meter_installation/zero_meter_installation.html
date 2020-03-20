@@ -1,0 +1,82 @@
+<html>
+    
+    <head>
+
+<title>Main Page</title>
+ <meta charset ="utf-8"/>
+ <!--include style sheets of the two different things-->
+ <link rel="stylesheet" type="text/css" href="../../css/banner.css">
+  <link rel="stylesheet" type="text/css" href="../../css/gallery.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!--different font-families-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+       
+       <script>
+$(document).ready(function(){
+    $('.first').show();
+    $(".showSingle").click(function(){
+       $('.targetDiv').hide();
+        $('.first').hide();
+        $('#div'+$(this).attr('target')).show();
+    });
+});
+</script>
+        
+</head>
+   
+   <body>
+ <div class ="top">
+
+<!--include the links to the different header tabs here-->
+    <a class="top_button" href="../../index.html" style="float: left"> Maud Canisius </a>
+  <a class="top_button" href="../../html/about.html">About</a>
+ <a class="top_button" href ="../../html/contact.html">Contact</a>
+      </div>
+
+              
+    <div id="content">
+       
+        <div id="text_box">
+            
+             
+             <h6>I could have been at the beach right now</h6>
+    
+    <p> Following the performative walk, along the topographical border between high- and low-Netherlands, derives this immersive installation. While the screens display the landscapes and the heroic engagement with the landscapes, an hacked laser and fog machine contribute to wave-simulations. In doing so, the installation both represents the physical components of the walk and the constructed image that I developed during the walk. 
+            </p>
+
+            
+            <h6>Documentation</h6>
+            
+            <div id="image_links">
+            
+             <a class="showSingle" target="1">
+           Installation </a><br>
+             
+    
+                   
+
+            
+        </div>
+
+        </div>
+       
+        <div id="picture_box">
+            <div class="picture_box_title">
+            <h6> </h6></div>
+        <div class="picture_box_picture">
+            
+        <div class="first"><img src="../../img/zero_meter/line_jpg"></div>
+            <div id="div1" class="targetDiv">   <iframe src="https://player.vimeo.com/video/351370603" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            
+            
+            </div> 
+            
+            
+        </div></div>
+        
+       </body>
