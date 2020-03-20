@@ -1,0 +1,100 @@
+<html>
+    
+    <head>
+
+<title>Main Page</title>
+ <meta charset ="utf-8"/>
+ <!--include style sheets of the two different things-->
+ <link rel="stylesheet" type="text/css" href="../../css/banner.css">
+  <link rel="stylesheet" type="text/css" href="../../css/gallery.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!--different font-families-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+       
+       <script>
+$(document).ready(function(){
+    $('.first').show();
+    $(".showSingle").click(function(){
+       $('.targetDiv').hide();
+        $('.first').hide();
+        $('#div'+$(this).attr('target')).show();
+    });
+});
+</script>
+        
+</head>
+   
+   <body>
+ <div class ="top">
+
+<!--include the links to the different header tabs here-->
+    <a class="top_button" href="../../index.html" style="float: left"> Maud Canisius </a>
+  <a class="top_button" href="../../html/about.html">About</a>
+ <a class="top_button" href ="../../html/contact.html">Contact</a>
+      </div>
+
+              
+    <div id="content">
+       
+        <div id="text_box">
+            
+             
+             <h6>I could have been at the beach right now</h6>
+    
+    <p> I experienced for the first time a night walk when I joined the Italian collective Mala for their night ritual organised for the Walking Encounters Congress in Prespes, Greece. The ritual of collectively embracing the perceptual impulses that the night time has to offer was an eye-opening experience. Therefore I decided to continue the practice with this series of walks that welcome the sunrise at four crucial days of the year, during the winter & summer Solstice and during the spring and autumn Equinox. I guide the group through a landscape that is gradually changing due to the approaching sun. 
+            </p>
+
+            
+            <h6>Documentation</h6>
+            
+            <div id="image_links">
+            
+             <a class="showSingle" target="1">
+           Installation </a><br>
+             <a class="showSingle" target="2">
+           Landscapes that could have a beach </a><br>
+                <a class="showSingle" target="3">
+           Sketching 1</a><br>
+            <a class="showSingle" target="4">
+           Sketching 2</a><br>
+               <a class="showSingle" target="5">
+           Process of documenting </a><br>
+               <a class="showSingle" target="6">
+           Still from documentation </a><br>
+                 <a class="showSingle" target="7">
+           Stills from documentation </a><br>
+                 
+    
+                   
+
+            
+        </div>
+
+        </div>
+       
+        <div id="picture_box">
+            <div class="picture_box_title">
+            <h6> </h6></div>
+        <div class="picture_box_picture">
+            
+        <div class="first"><img src="../../img/zero_meter/line_jpg"></div>
+            <div id="div1" class="targetDiv">   <iframe src="https://player.vimeo.com/video/351370603" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div id="div2" class="targetDiv"><img src="../../img/zero_meter/landscapes_MaudCanisius.jpg"></div>
+        <div id="div3" class="targetDiv"><img src="../../img/zero_meter/watersketch_MaudCanisius.jpg"></div>
+        <div id="div4" class="targetDiv"><img src="../../img/zero_meter/sketch2_MaudCanisius.jpg"></div>
+        <div id="div5" class="targetDiv"><img src="../../img/zero_meter/process_MaudCanisius.jpg"></div>
+            <div id="div6" class="targetDiv"><img src="../../img/zero_meter/marking_still.jpg"></div>
+            <div id="div7" class="targetDiv"><img src="../../img/zero_meter/stills_MaudCanisius.jpg"></div>
+            
+            
+            </div> 
+            
+            
+        </div></div>
+        
+       </body>
