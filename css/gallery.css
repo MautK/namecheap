@@ -167,12 +167,22 @@ p {
 }
 
 #picture_box {
-    margin-right: 5px;
-    margin-left: 35%;
-    width: 63%;
-     height: 50%;
+    position: relative;
+    margin: 35px;
+    width: 50%;
+    padding-bottom: 20px;
+    left: 30%;
     overflow: hidden;
-    margin-bottom: 50px;
+    transform: translateX(-50%);
+}
+
+.images_projects {
+    margin: 35px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #image_links {
